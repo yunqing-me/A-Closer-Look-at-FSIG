@@ -1,0 +1,8 @@
+@InProceedings{Zhao_2022_CVPR,
+    author    = {Zhao, Yunqing and Ding, Henghui and Huang, Houjing and Cheung, Ngai-Man},
+    title     = {A Closer Look at Few-Shot Image Generation},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2022},
+    pages     = {9140-9150}
+}
