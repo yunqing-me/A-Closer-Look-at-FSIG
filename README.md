@@ -1,4 +1,4 @@
-# A_Closer_Look_at_FSIG
+# A Closer Look at Few-shot Image Generation
 The IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR) 2022
 
 
@@ -8,3 +8,5 @@ The IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR) 2022
     [<a href="https://arxiv.org/abs/2205.03805" target="_blank" style="text-decoration: none;">Paper</a>]
 </b>
 </p>
+
+Code/Project page will be actively updated.
