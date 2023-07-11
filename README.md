@@ -13,6 +13,13 @@ The IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR) 2022
 
 Code/Project page will be actively updated.
 
+### TL, DR
+
+```
+In this work, we take a closer look at few-shot image generation (FSIG) problem. Our analysis discovers that: current methods for FSIG achieve similar quality of generated images after few-shot adaptation on target training images, while the main difference is on the diversity of those generated samples. State-of-the-art FSIG algorithms generates visual-pleasant images with both high-quality and high-diversity.
+
+Based on our analysis, we propose a mutual-information based contrastive learning algorithm (DCL) that preserves the diversity of generated images during adaptation. 
+```
 
 # Bibtex
 If you find our work useful in your research, please consider citing our paper:
