@@ -21,6 +21,63 @@ In this work, we take a closer look at few-shot image generation (FSIG) problem.
 Based on our analysis, we propose a mutual-information based contrastive learning algorithm (DCL) that preserves the diversity of generated images during adaptation. 
 ```
 
+# Installation and Environment:
+
+- Platform: Linux
+- Tesla V100 GPUs / (or A100 GPUs)
+- PyTorch 1.7.0
+- Python 3.6.9
+- lmdb, tqdm
+
+Alternatively, A suitable conda environment named `fsig` can be created and activated with:
+```
+git clone https://github.com/yunqing-me/A-Closer-Look-at-FSIG.git
+conda env create -f environment.yml
+conda activate fsig
+cd A-Closer-Look-at-FSIG
+```
+
+# Prepare datasets
+
+### Step 1. 
+Prepare the few-shot training dataset using `lmdb` format
+
+For example, download the 10-shot target set, `Babies` ([Link](https://drive.google.com/file/d/1P8JMLq2Kk61MbEZDgwytqXxfrhG-NqcR/view?usp=sharing)) and `AFHQ-Cat`([Link](https://drive.google.com/file/d/1zgacEE0jiiDxttbK81fk6miY_4Ithhw-/view?usp=sharing)), and organize your directory as follows:
+
+~~~
+10-shot-{babies/afhq_cat}
+└── images		
+    └── image-1.png
+    └── image-2.png
+    └── ...
+    └── image-10.png
+~~~
+
+Then, transform to `lmdb` format:
+
+`python prepare_data.py --input_path [your_data_path_of_{babies/afhq_cat}] --output_path ./_processed_train/[your_lmdb_data_path_of_{babies/afhq_cat}]`
+
+### Step 2. 
+Prepare the entire target dataset for evaluation
+
+For example, download the entire dataset, `Babies`([Link](https://drive.google.com/file/d/1xBpBRmPRoVXsWerv_zx4kQ4nDQUOsqu_/view?usp=share_link)) and `AFHQ-Cat`([Link](https://drive.google.com/file/d/1_-cDkzqz3LlotXSYMBXZLterSQe4fR7S/view?usp=share_link)), and organize your directory as follows:
+
+~~~
+entire-{babies/afhq_cat}
+└── images		
+    └── image-1.png
+    └── image-2.png
+    └── ...
+    └── image-n.png
+~~~
+
+Then, transform to lmdb format for evaluation
+
+`python prepare_data.py --input_path [your_data_path_of_entire_{babies/afhq_cat}] --output_path ./_processed_test/[your_lmdb_data_path_of_entire_{babies/afhq_cat}]`
+
+### Step 3. 
+Download the GAN model pretrained on FFHQ from [here](https://drive.google.com/file/d/1TQ_6x74RPQf03mSjtqUijM4MZEMyn7HI/view). Then, save it to `./_pretrained/style_gan_source_ffhq.pt`.
+
 # Bibtex
 If you find our work useful in your research, please consider citing our paper:
 ```
