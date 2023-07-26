@@ -2,10 +2,12 @@
 The IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR) 2022
 
 
-<p align='left' style="text-align:left;font-size:1.3em;">
+<p align='left' style="text-align:left;font-size:1.1em;">
 <b>
     [<a href="https://arxiv.org/abs/2205.03805" target="_blank" style="text-decoration: none;">Paper</a>]&nbsp;&nbsp;
     [<a href="https://yunqing-me.github.io/A-Closer-Look-at-FSIG/" target="_blank" style="text-decoration: none;">Project Page</a>]&nbsp;&nbsp;
+    [<a href="https://drive.google.com/file/d/1ttXaAqWS8YY3CisvhXscl2PIPD7i1G6O/view?usp=sharing" target="_blank" style="text-decoration: none;">Slides</a>]&nbsp;&nbsp;
+    [<a href="https://drive.google.com/file/d/1Ed3UezqoZn7k2Uv4bpep6nK2LveTOZHX/view?usp=sharing" target="_blank" style="text-decoration: none;">Poster</a>]&nbsp;&nbsp;
     [<a href="https://drive.google.com/drive/folders/1GkiYFeUd85nDNsrLG52J-xz-jLjiKED3" target="_blank" style="text-decoration: none;">Data Repository</a>]
     
 </b>
