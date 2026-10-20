@@ -207,7 +207,7 @@
 		<tr>
 			<td>
 				<p style="text-align:justify; text-justify:inter-ideograph;">
-					Modern GANs excel at generating high quality and diverse images. However, when transferring the pretrained GANs on small target data (e.g., 10-shot), the generator tends to replicate the training samples. Several methods have been proposed to address this few-shot image generation task, but there is a lack of effort to analyze them under a unified framework. As our first contribution, we propose a framework to analyze existing methods during the adaptation. Our analysis discovers that while some methods have disproportionate focus on diversity preserving which impede quality improvement, all methods achieve similar quality after convergence. Therefore, the better methods are those that can slow down diversity degradation. Furthermore, our analysis reveals that there is still plenty of room to further slow down diversity degradation. Informed by our analysis and to slow down the diversity degradation of the target generator during adaptation, our second contribution proposes to apply mutual information (MI) maximization to retain the source domain’s rich multi-level diversity information in the target domain generator. We propose to perform MI maximization by contrastive loss (CL), leverage the generator and discriminator as two feature encoders to extract different multi-level features for computing CL. We refer to our method as Dual Contrastive Learning (DCL). Extensive experiments on several public datasets show that, while leading to a slower diversity-degrading generator during adaptation, our proposed DCL brings visually pleasant quality and state-of-the-art quantitative performance.
+					Modern GANs excel at generating high quality and diverse images. However, when transferring the pretrained GANs on small target data (e.g., 10-shot), the generator tends to replicate the training samples. Several methods have been proposed to address this few-shot image generation task, but there is a lack of effort to analyze them under a unified framework. As our first contribution, we propose a framework to analyze existing methods during the adaptation. Our analysis discovers that while some methods have a disproportionate focus on preserving diversity, which impedes quality improvement, all methods achieve similar quality after convergence. Therefore, the better methods are those that can slow down diversity degradation. Furthermore, our analysis reveals that there is still plenty of room to further slow down diversity degradation. Informed by our analysis and to slow down the diversity degradation of the target generator during adaptation, our second contribution proposes to apply mutual information (MI) maximization to retain the source domain’s rich multi-level diversity information in the target domain generator. We propose to perform MI maximization by contrastive loss (CL), leveraging the generator and discriminator as two feature encoders to extract different multi-level features for computing CL. We refer to our method as Dual Contrastive Learning (DCL). Extensive experiments on several public datasets show that, while leading to a slower diversity-degrading generator during adaptation, our proposed DCL brings visually pleasant quality and state-of-the-art quantitative performance.
 			</td>
 		</tr>
 	</table>
@@ -256,14 +256,14 @@
 				<td>
 					<p style="text-align:justify; text-justify:inter-ideograph;">
 					<b>- 1: </b>
-					We tackle few-shot image generation (FSIG) via adapting a pre-trained source GAN to a small target domain. <br>
+					We tackle few-shot image generation (FSIG) by adapting a pre-trained source GAN to a small target domain. <br>
 					
 					<b>- 2: </b>
 					Our work makes two main contributions: 
 					<ul>
 						<li>
-							We discover that, existing methods for FSIG achieve high quality of generated images during adaptation. On the other hand, while different methods can achieve similar quality on the target domain, their diversity-degrading rates
-							vary drastically. These observations are shown in the below figure.
+							We find that existing methods for FSIG achieve high quality of generated images during adaptation. On the other hand, while different methods can achieve similar quality on the target domain, their diversity-degrading rates
+							vary drastically. These observations are shown in the figure below.
 						</li>
 						<li>
 							We propose a new method to improve the performance of FSIG and achieve comparable performance.
@@ -310,7 +310,7 @@
 		<tr>
 			<td>
 				<p style="text-align:justify; text-justify:inter-ideograph;">
-				 Comparison with other methods for 10-shot adaptation on FFHQ-Babies and Sketches. Additional result in Supplement.<br>
+				 Comparison with other methods for 10-shot adaptation on FFHQ-Babies and Sketches. Additional results are provided in the supplement.<br>
 			</td>
 		</tr>
 	</table>
@@ -345,10 +345,10 @@
 			<tr>
 				<td>
 					<p style="text-align:justify; text-justify:inter-ideograph;"> 
-					Left: Transferring a GAN pretrained on FFHQ to 10-shot target samples . We fix the noise input by each column to observe the
-					relationship of generated images before and after adaptation. Mid: We observe that, most of existing methods lose diversity quickly before
+					Left: Transferring a GAN pretrained on FFHQ to 10-shot target samples. We fix the noise input by each column to observe the
+					relationship of generated images before and after adaptation. Mid: We observe that most existing methods lose diversity quickly before
 					the quality improvement converges, and tend to replicate the training data. Our method, in contrast, slows down the loss of diversity and
-					preserves more details. For example: In red frames (Upper), the hair style and hat are better preserved. In pink frames (Bottom), the smile
+					preserves more details. For example: In red frames (Upper), the hairstyle and hat are better preserved. In pink frames (Bottom), the smile
 					teeth are well inherited from the source domain. We also outperform others in quantitative evaluation (Right).
 				</td>
 			</tr>
