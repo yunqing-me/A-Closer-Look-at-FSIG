@@ -31,12 +31,12 @@ Based on our analysis, we propose a mutual-information based contrastive learnin
 - Python 3.6.9
 - lmdb, tqdm
 
-Alternatively, A suitable conda environment named `fsig` can be created and activated with:
+Alternatively, a suitable conda environment named `fsig` can be created and activated with:
 ```
 git clone https://github.com/yunqing-me/A-Closer-Look-at-FSIG.git
+cd A-Closer-Look-at-FSIG
 conda env create -f environment.yml
 conda activate fsig
-cd A-Closer-Look-at-FSIG
 ```
 
 # Prepare datasets
